@@ -7,7 +7,7 @@ set(CMAKE_CXX_FLAGS "-Wall -std=c++14 -O3 ")
 
 include_directories(/usr/include/python2.7/ ../intcrypt/src)
 link_directories(../intcrypt/lib)
-link_libraries(-lboost_python -lintcrypt)
+link_libraries(-lboost_python -lintcrypt -lpython2.7 )
 
 
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
